@@ -1,0 +1,46 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fashion blog</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body{
+                background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMi0wNS91cHdrNjE4NDMxMTgtd2lraW1lZGlhLWltYWdlLWtvd2M1Zmw3LmpwZw.jpg?s=Vb1RVQjGz_VMc9Ve5xg27qe9Wly0pwSmc1fzWoLKJQA);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Segoe UI';
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="formBox">
+                <h1>Login</h1>
+                <form action="loginpage.php" method="post">
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required placeholder="EMail">
+                    </div>
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required placeholder="Password">
+                    </div>
+                    <div class="forgotPass">
+                        <a href="#">Forgot password</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="checkbox">Remeber me</label>
+                    </div>
+                    <button type="submit" class="logbtn">Login</button>
+                    <br><br>
+                    <p>Don't have an account ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Regester</a></p>                    
+                </form>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

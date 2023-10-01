@@ -1,0 +1,142 @@
+body{
+    font-family: 'broadway';
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 20px 100px;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    z-index: 99;
+}
+.navMenu{
+    position: relative;
+    background-color: black;
+    font-size: 1.1em;
+}
+
+.navMenu a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-left: 20px;
+    transition: .5s;
+}
+
+.navMenu a:hover{
+    color: rgb(177, 67, 120);
+    font-size: 1.2em;
+}
+.navMenu a::after{
+    content: '';
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    background: white;
+    left: 0;
+    bottom: -6px;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .5s;
+}
+.navMenu a:hover::after{
+    transform: scaleX(1);
+}
+
+.holder{
+    display: grid;
+    grid-template-columns: .5fr 5fr .5fr 5fr .5fr;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.holder img{
+    width: 90%;
+    height: auto;
+    border-radius: 50px;
+    transition-duration: 1s;
+    align-items: center;
+    justify-content: center;
+}
+
+.holder img:hover{
+    width: 100%;
+    height: auto;
+    border: 5px inset gold;
+    transition: .5s;
+}
+
+.container{
+    font-family: 'Segoe UI';
+    font-weight: 900;
+    font-size: 1.5em;
+    color: rgb(3, 2, 7);
+    position: relative;
+    width: 550px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgb(1, 62, 87);
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 30x rgb(0, 30, 85);
+}
+
+.formBox{
+    width: 100%;
+    padding: 40px;
+}
+
+.formBox h1{
+    color: rgb(14, 1, 99);
+    text-align: center;
+}
+
+.inputBox{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid;
+    margin: 30px 0;
+}
+
+.inputBox input{
+    width: 400;
+    height: 40;
+    background: transparent;
+    border: none;
+}
+
+input{
+    font-size: 1em;
+    font-weight: bolder;
+    color: black;
+}
+
+.logbtn{
+    width: 130px;
+    height: 40px;
+    border: 2px solid white;
+    border-radius: 6px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-weight: 999;
+    font-size: .8em;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+.logbtn:hover{
+    background-color: white;
+    color: black;
+}
