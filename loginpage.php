@@ -12,7 +12,7 @@
     echo 'number of rows : '.$result->num_rows;
     
     if($result->num_rows > 0){
-        header("location: index.html", true, 301);
+        header("location: home.html", true, 301);
         die();        
     }else{
         echo 'No existing account on this email do you want to create one !!';
