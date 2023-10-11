@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>fashion blog</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body{
+                background: url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9zdGF0aWMvaW1hZ2VzL3dlYnNpdGUvMjAyMi0wNS91cHdrNjE4NDMxMTgtd2lraW1lZGlhLWltYWdlLWtvd2M1Zmw3LmpwZw.jpg?s=Vb1RVQjGz_VMc9Ve5xg27qe9Wly0pwSmc1fzWoLKJQA);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Segoe UI';
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="formBox">
+                <h1>Register</h1>
+                <form action="regestration.php" method="post">
+                    <div class="inputBox">
+                        <input type="text" required placeholder="First name" name="fname">
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required placeholder="Last name" name="lname">
+                    </div>
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="call"></ion-icon></span>
+                        <input type="tel" required placeholder="Phone number" pattern="[0-9]{10}" name="phno">
+                    </div>
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required placeholder="EMail" name="email">
+                    </div>
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required placeholder="Set Password" name="password">
+                    </div> 
+                    <button type="submit" class="logbtn">Sign up</button>             
+                </form>
+            </div>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

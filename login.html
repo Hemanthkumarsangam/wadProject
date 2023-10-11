@@ -15,6 +15,30 @@
                 font-family: 'Segoe UI';
                 display: flex;
             }
+            .container a{
+                position: relative;
+                text-decoration: none;
+                color: rgb(255, 0, 106);
+                transition: .5s;
+            }
+            .container a::after{
+                content: '';
+                height: 2px;
+                position: absolute;
+                width: 100%;
+                background: rgb(255, 0, 106);
+                left: 0;
+                bottom: -6px;
+                border-radius: 5px;
+                transform: scaleX(0);
+                transition: .6s;
+            }
+            .container a:hover{
+                font-size: 27;
+            }
+            .container a:hover::after{
+                transform: scaleX(1);
+            }
         </style>
     </head>
     <body>
@@ -24,19 +48,18 @@
                 <form action="loginpage.php" method="post">
                     <div class="inputBox">
                         <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" required placeholder="EMail">
+                        <input type="email" required placeholder="EMail" name="email">
                     </div>
                     <div class="inputBox">
                         <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" required placeholder="Password">
+                        <input type="password" required placeholder="Password" name="password">
                     </div>
                     <div class="forgotPass">
                         <a href="#">Forgot password</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <label><input type="checkbox">Remeber me</label>
                     </div>
-                    <button type="submit" class="logbtn">Login</button>
+                    <button type="submit" class="logbtn" style="margin-top: 30px;">Login</button>
                     <br><br>
-                    <p>Don't have an account ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Regester</a></p>                    
+                    <p>Don't have an account ?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="regester.html" target="_blank">Regester</a></p>                    
                 </form>
             </div>
         </div>
