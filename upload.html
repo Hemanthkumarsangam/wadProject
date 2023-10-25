@@ -16,26 +16,29 @@
             .content{
                 display: flex;
             }
+            .content input{
+                backdrop-filter: blur(10px);
+            }
         </style>
     </head>
     <body>
-            <div class="header">
-                <h1>Fashion blog</h1>
-                <div class="navMenu">
-                    <a href="index.html">Back</a>
-                    <a href="home.html">home</a>
-                    <a href="#">about</a>
-                    <a href="#">contact</a>
-                    <a href="login.html" style="display: inline-block; border: 2px solid; border-radius: 6px; padding: 10px; color: orange;">Login / Signup</a>
-                </div>           
-            </div><br><br><br><br><br><br><br>
+        <div class="header">
+            <h1>Fashion blog</h1>
+            <div class="navMenu">
+                <a href="index.html">Back</a>
+                <a href="veiw.php">home</a>
+                <a href="aboutus.html" target="_blank">about</a>
+                <a href="contact.html">contact</a>
+                <a href="login.html" style="display: inline-block; border: 2px solid; border-radius: 6px; padding: 10px; color: orange;">Login / Signup</a>
+            </div>           
+        </div>
         <div class="content">
-            <form action="">
+            <form action="uploadImg.php" method="post" enctype="multipart/form-data">
                 <label for="image">Place the image here : </label>
-                <input type="file" required><br><br>
+                <input type="file" required name="image" id="image"><br><br>
                 <label for="desc">Describe the design !! :</label><br>
-                <input type="text" required style="height: 300px; width: 500px; font-size: larger;"><br><br><br>
-                <button type="submit">Post</button>
+                <input type="text" required style="height: 300px; width: 500px;" name="desc" id="desc"><br><br><br>
+                <button type="submit" name="submit">Post</button>
             </form>
         </div>
     </body>
